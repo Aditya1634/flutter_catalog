@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
 
   //saara ui ka kam build method ke andar hota hai ;build ko bar bar call krna hota hai coz ui ko refresh krta hai
 
   final int days = 30;
   final String name = "Aditya";
-  String surname = "Dhage";
+  final String surname = "Dhage";
   // double num = 40.2323;
   //  no float, long short byte
   // bool isMale = true;
