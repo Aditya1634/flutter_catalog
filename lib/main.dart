@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/Pages/login_page.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'Pages/home_page.dart';
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
               Colors.deepPurple, //Adjusts all colors according to Purple(here).
               fontFamily: GoogleFonts.lato().fontFamily,      
           ),
+          //debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
         brightness: Brightness
             .dark, //  Brightness.dark overrides theme so colors of primarySwatch wont work in dark mode
@@ -29,8 +31,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/login",
       routes: {
         "/": (context) => LoginPage(), //default route "/" means HomePage
-        "/home": (context) => HomePage(), // they are objects of classes therefore new keyword is working
-        "/login": (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(), // they are objects of classes therefore new keyword is working
+        MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
