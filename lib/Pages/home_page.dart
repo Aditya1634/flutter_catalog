@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 class HomePage extends StatelessWidget {
 
   //saara ui ka kam build method ke andar hota hai ;build ko bar bar call krna hota hai coz ui ko refresh krta hai
@@ -29,7 +31,7 @@ class HomePage extends StatelessWidget {
               surname), //$ string interpolation
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
