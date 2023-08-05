@@ -9,19 +9,10 @@ class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = "Aditya";
   final String surname = "Dhage";
-  // double num = 40.2323;
-  //  no float, long short byte
-  // bool isMale = true;
-  // num temp = 30.5; //takes both int and float
-
-  // var day = "Tuesday"; datatype decided by compiler
-  // const pi = 3.14;
-  // final variable similar to const but in final for eg: if there is a list then sum can be done , but not in const
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // It is a widget ; component of material ; contains head(appBar) body foot((Drawer,Bottom Navigation bar
       appBar: AppBar(
         title: Text("Catalog App"),
       ),

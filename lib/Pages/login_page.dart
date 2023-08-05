@@ -72,7 +72,6 @@ class _LoginPageState extends State<LoginPage> {
                           },
                           onChanged: ((value) {
                             name = value;
-                            // build method ko call dena padega to reflect changes kyuki ui usme hi likha hai pura but direct call nahi de skte like build() isse code fat jayega..... uske liye method  hai setState
                             setState(() {}); // Calls build method
                           })),
                       TextFormField(
