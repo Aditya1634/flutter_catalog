@@ -6,7 +6,6 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // final imageUrl = "assets/images/profile.jpg";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
@@ -21,7 +20,6 @@ class MyDrawer extends StatelessWidget {
                     currentAccountPicture: CircleAvatar(
                       backgroundImage: AssetImage("assets/images/profile.jpg"),
                     ),
-                    // Image.asset("assets/images/profile.jpg"),
                 ),
             ),
             ListTile(
@@ -69,3 +67,17 @@ class MyDrawer extends StatelessWidget {
     );
   }
 }
+
+//Widgets are immutable so we have to create a new widget to change the theme
+//three types of trees in flutter
+//1. Widget Tree
+//2. Element Tree
+//3. Render Tree
+//Widget tree is the tree of widgets that we create in our code
+//Element tree is the tree of elements that flutter creates from our widget tree
+//Render tree is the tree of render objects that flutter creates from our element tree
+//Render objects are the objects that flutter uses to paint our UI on the screen
+
+//context is the information about the widget
+//It is element (stateless element)
+// decides the position of the widget in the widget tree
